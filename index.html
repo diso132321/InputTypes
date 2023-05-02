@@ -2,13 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link href = "style.css" rel = "stylesheet" type = "text/css"/>
+    <title>Ice Cream Shop</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<div class = "container">
-    <div class = "content"
+<div class="container">
+    <div class="content">
         <h1>Ice Cream Shop</h1>
+        <form>
+            <div class="row">
+                <div>
+                    <label for="firstname">First</label>
+                    <input id="firstname" name="first_name" type="text">
+                </div>
+                <div>
+                    <label for="lastname">Last</label>
+                    <input id="lastname" name="last_name" type="text">
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="radio" id="vanilla" name="icecream">
+                    <label for="vanilla">Vanilla</label>
+                </div>
+                <div>
+                    <input type="radio" id="strawberry" name="icecream">
+                    <label for="strawberry">Strawberry</label>
+                </div>
+                <div>
+                    <input type="radio" id="chocolate" name="icecream">
+                    <label for="chocolate">Chocolate</label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <input type="radio" id="small" name="icecream">
+                    <label for="small">Small</label>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 </body>
