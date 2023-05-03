@@ -2,9 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Freddy Fazbear's Pizza</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-
+<div class="container">
+    <div class="content">
+        <h1>Freddy Fazbear's Pizza</h1>
+        <form>
+            <fieldset>
+                <legend>Customer:</legend>
+                <div class="row">
+                    <div>
+                        <label for="firstname">First</label>
+                        <input id="firstname" name="first_name" type="text">
+                    </div>
+                    <div>
+                        <label for="lastname">Last</label>
+                        <input id="lastname" name="last_name" type="text">
+                    </div>
+                    <div>
+                        <label for="number">Number</label>
+                        <input id="number" name="number" type="text">
+                    </div>
+                    <div>
+                        <label for="adress">Adress</label>
+                        <input id="adress" name="adress" type="text">
+                    </div>
+                </div>
+            </fieldset>
+            <div class="row">
+                <fieldset>
+                    <legend>Crust:</legend>
+                    <div>
+                        <input type="radio" id="thin" name="crust">
+                        <label for="thin">Thin Crust</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="thick" name="crust">
+                        <label for="thick">Thick Crust</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="none" name="crust">
+                        <label for="none">No Crust</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <div>
+                        <input type="radio" id="small" name="size">
+                        <label for="small">Small</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="medium" name="size">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="large" name="size">
+                        <label for="large">Large</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Toppings:</legend>
+                    <div>
+                        <input type="checkbox" id="peper" name="peper">
+                        <label for="peper">Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cheese" name="cheese">
+                        <label for="cheese">Extra Extra Cheesy</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="olive" name="olive">
+                        <label for="olive">Olives</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="pine" name="pine">
+                        <label for="pine">Pineapples</label>
+                    </div>
+                </fieldset>
+            </div>
+            <fieldset>
+                <legend>How many toppings whould you like?</legend>
+                <label for="container">Please Choose sections!</label>
+                <select name="container" id="container">
+                    <option value="one">Mixed</option>
+                    <option value="two">Halves</option>
+                    <option value="three">Triple</option>
+                    <option value="four">Quarts</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Specials:</legend>
+                <label for="SpecialRequest">Special Request:</label>
+                <textarea id="SpecialRequest" name="SpecialRequest" rows="4" cols="10" placeholder="Allergic to peanuts, substitution, ect."></textarea>
+            </fieldset>
+            <div>
+                <label for="coupon">Coupon?</label>
+                <input id="coupon" name="coupon" type="text">
+            </div>
+        </form>
+            <fieldset>
+                <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+                <button type="submit">Submit Order</button>
+            </fieldset>
+    </div>
+</div>
 </body>
 </html>
